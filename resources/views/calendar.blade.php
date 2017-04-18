@@ -5,6 +5,7 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.3.1/fullcalendar.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.3.1/fullcalendar.print.css" media="print">
     <title>Calendar example</title>
@@ -17,8 +18,16 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.3.1/fullcalendar.min.js"></script>
 
     <script>
-        $(document).ready(function () {
-          $('#calendar').fullCalendar()
+        $(document).ready(function() {
+            $('#calendar').fullCalendar({
+                theme: true,
+                editable: true,
+                header: {
+                    left: 'prev,next,today',
+                    center: 'title',
+                    right: 'month,agendaWeek,agendaDay'
+                },
+            })
         });
     </script>
 </body>

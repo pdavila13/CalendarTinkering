@@ -27,6 +27,17 @@
                     center: 'title',
                     right: 'month,agendaWeek,agendaDay'
                 },
+                events: [
+                    {
+                        title: 'All Day Event',
+                        start: '2017-04-01'
+                    },
+                    {
+                        title: 'Long Event',
+                        start: '2017-04-07',
+                        end: '2017-04-10'
+                    },
+                ]
             })
         });
     </script>
